@@ -1,0 +1,274 @@
+/* hasard */
+h2{
+  padding: 2px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+header{
+	width:100%;
+	height: 50px;
+	background: #262626;
+	box-shadow:0px 5px 10px black;
+	z-index:5;
+}
+
+h1{
+	width:122px;
+	padding-top:3px;
+	margin: auto;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;	
+}
+
+#menu{
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position:absolute;
+	width:30px;
+	height:50px;
+	background:#262626;
+	left:10px;
+}
+
+.min{
+	background:white;
+	width:30px;
+	height:5px;
+	margin: 2px;
+	border-radius: 2px;
+}
+
+body{
+	margin:0;
+	background-color:rgb(23, 23, 23);
+}
+
+.corps{
+  display: block;
+}
+
+#corps{
+	color:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+label{
+	display:block;
+}
+
+input[type=number]{
+	width:250px;
+	height:20px;
+}
+
+.but{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+input[value=Calcul]{
+	width:262px;
+	height:45px;
+	margin: 10px 0 10px 0;
+	background:linear-gradient( #53ff1a, #208000);
+	border: black 3px solid;
+	border-radius:7px;
+	font-size: 20px;
+	color:white;
+	
+}
+
+input[value=Effacer]{
+	width:262px;
+	height:45px;
+	margin:10px 0 10px 0;
+	background:linear-gradient( #ff5c33, #cc2900);
+	border:black 3px solid;
+	border-radius:7px;
+	font-size: 20px;
+	color:white;
+}
+
+#text{
+	background-color:rgb(56, 56, 56);
+	width:95%;
+	height:215px;
+	overflow:auto;
+	border-radius: 2px 2px 0 0;
+	border-bottom:solid white 1px;
+	font-size:12px;
+}
+
+#li{
+  display: none;
+	background:#262626;
+	position:absolute;
+	margin:0;
+	padding:0;
+	width:40%;
+	border-radius:0 0 5px 0;
+	box-shadow: 1px 0px 5px black;
+	border-right: white 0.5px solid;
+	border-bottom: white 0.5px solid;
+}
+
+ul{
+	display: flex;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	width:100%;
+	flex-direction: column;	
+	color: white;
+}
+
+ul li{
+  display: block;
+  text-align: center;
+}
+
+/* tableau */
+
+table{
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+
+th{
+  background-color : white;
+  color: black ;
+  padding: 5px;
+}
+
+td{
+  border: 1px solid rgb(23, 23, 23);
+  text-align: left;
+  padding: 2px;
+  text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(23, 23, 23);
+}
+
+/* check */
+
+#check{
+  display : flex;
+  padding: 0 0 10px 0;
+}
+
+/* espace */
+
+.espace{
+  text-align: center;
+}
+
+/* message perte */
+
+.perte{
+  color: red;
+  text-align: center;
+}
+
+/* valeur */
+
+.valeur{
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* active */
+
+input[value=Calcul]:active{
+	width:262px;
+	height:45px;
+	margin: 10px 0 10px 0;
+	background:linear-gradient( #00e64d, #006622);
+	border: black 3px solid;
+	border-radius:7px;
+	font-size: 20px;
+	color:black ;
+	
+}
+
+input[value=Effacer]:active {
+  width: 262px;
+  height: 45px;
+  margin: 10px 0 10px 0;
+  background: linear-gradient(#cc3300, #661a00);
+  border: black 3px solid;
+  border-radius: 7px;
+  font-size: 20px;
+  color: black;
+}
+/* menu */
+
+#menu div:active{
+  background-color :black;
+}
+
+/* - - - - - - - inest - - - - - - - */
+.corps1{
+  display: none;
+}
+
+#corps1 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text1 {
+  background-color: rgb(56, 56, 56);
+  width: 95%;
+  height: 215px;
+  overflow: auto;
+  border-radius: 2px 2px 0 0;
+  border-bottom: solid white 1px;
+  font-size: 12px;
+}
+/* check */
+
+#check1 {
+  display: flex;
+  padding: 0 0 10px 0;
+}
+
+/* - - - - - - - risque - - - - - - - */
+.corps2{
+  display: none;
+}
+
+#corps2 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text2 {
+  background-color: rgb(56, 56, 56);
+  width: 95%;
+  height: 215px;
+  overflow: auto;
+  border-radius: 2px 2px 0 0;
+  border-bottom: solid white 1px;
+  font-size: 12px;
+}
+
+/* - - - - - - - survol page - - - - - - - */
+
+li.red{
+  background: red;
+}
