@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="script/jquery-3.2.1.min.js"></script>
+  <script src="script/animation.js"></script>
+  <title> Calcul en hasard</title>
+</head>
+
+<body id="body">
+
+  <!--en-tête-->
+
+  <header>
+    <div id="menu">
+      <div class="min"></div>
+      <div class="min"></div>
+      <div class="min"></div>
+    </div>
+
+    <h1>TC-CAP</h1>
+  </header>
+
+  <!--liste menu-->
+
+  <div id="li">
+    <ul>
+      <li class="red">
+        <p>Calcul hasard</p>
+      </li>
+      <li>
+        <p>Calcul invest</p>
+      </li>
+      <li>
+        <p>Calcul risque</p>
+      </li>
+      <li>
+        <p>Aide</p>
+      </li>
+    </ul>
+  </div>
+
+  <!--Calcul hasard-->
+
+  <div class="corps">
+    <div id="corps">
+
+      <div>
+        <h2>Hasard calcul</h2>
+        <label for="capital">Capital :</label>
+        <input id="capital" type="number" value="10" />
+
+        <label for="taux1">Taux de gain :</label>
+        <input id="taux1" type="number" value="30" />
+
+        <label for="taux2">Taux de perte :</label>
+        <input id="taux2" type="number" value="10" />
+
+        <label for="jour">Trade :</label>
+        <input id="jour" type="number" value="5" />
+      </div>
+
+      <div class="but">
+        <input type="button" value="Calcul" onclick="func()">
+
+        <div id="check">
+          <input type="checkbox" id="check1">
+          <label for="check1"> Afficher le tableau </label>
+        </div>
+
+      </div>
+
+      <div id="text">
+
+      </div>
+
+      <div class="but">
+        <input type="button" value="Effacer" onclick="ef()">
+      </div>
+    </div>
+  </div>
+
+  <!--Calcul invest-->
+
+  <div class="corps1">
+    <div id="corps1">
+
+      <div>
+        <h2>Invest calcul</h2>
+        <label for="capital1">Capital :</label>
+        <input id="capital1" type="number" value="10" />
+
+        <label for="taux3">Taux de gain :</label>
+        <input id="taux3" type="number" value="30" />
+
+        <label for="taux4">Taux de perte :</label>
+        <input id="taux4" type="number" value="10" />
+
+        <label for="jour1">Trade :</label>
+        <input id="jour1" type="number" value="1" />
+      </div>
+
+      <div class="but">
+        <input type="button" value="Calcul" onclick="func1()" />
+
+        <div id="check">
+          <input type="radio" id="gain" name="bb" checked />
+          <label for="gain">Gain</label>
+          <input type="radio" id="perte" name="bb" />
+          <label for="perte">Perte</label>
+        </div>
+
+        <div id="check1">
+          <input type="checkbox" id="check2">
+          <label for="check2"> Afficher le tableau </label>
+        </div>
+
+      </div>
+
+      <div id="text1">
+
+      </div>
+
+      <div class="but">
+        <input type="button" value="Effacer" onclick="ef1()" />
+      </div>
+    </div>
+  </div>
+
+  <!--Calcul risque-->
+
+  <div class="corps2">
+    <div id="corps2">
+
+      <div>
+        <h2>Risque RR calcul (.../USD)</h2>
+
+        <label for="capital2">Capital :</label>
+        <input id="capital2" type="number" value="10" />
+
+        <label for="taux5">Taux :</label>
+        <input id="taux5" type="number" value="30" />
+
+        <label for="pips">Pips Risque/Gain :</label>
+        <input id="pips" type="number" value="10" />
+
+      </div>
+      <div class="but">
+        <input type="button" value="Calcul" onclick="func2()" />
+      </div>
+
+      <div id="text2">
+
+      </div>
+
+      <div class="but">
+        <input type="button" value="Effacer" onclick="ef2()" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
